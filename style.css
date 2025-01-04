@@ -57,32 +57,30 @@ body {
 HEADER
 */
 
-header {
-  position: relative;
-}
-
 .slope {
   position: absolute;
+  top: 0;
   width: 100%;
-  min-height: 325px;
+  min-height: 350px;
   background-color: #1e2640;
   transform: skewY(-20deg);
   transform-origin: top left;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.namecontainer {
+.image-container {
   position: relative;
-  padding-top: 35px;
-  min-width: 80%;
-  left: 50%;
-  transform: translate(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* top: 0; */
+  width: 100%;
+  /* min-height: 300px; */
+  margin: 35px auto 0;
 }
 
 header img {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
   max-width: 80%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -90,7 +88,7 @@ header img {
 h1 {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 14%;
   color: #fff;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
