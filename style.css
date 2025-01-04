@@ -44,3 +44,22 @@ h6 {
 /*
 MAIN BODY
 */
+
+/*
+HEADER
+*/
+
+header img {
+  max-width: 300px;
+}
+
+.slope {
+  padding: 250px;
+  background-color: #1e2640;
+  transform: skewY(-30deg);
+  transform-origin: top left;
+}
+
+h1 {
+  color: #fff;
+}
