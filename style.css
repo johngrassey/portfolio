@@ -153,6 +153,7 @@ h2 {
 }
 .work h2 {
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .projectlist {
@@ -214,7 +215,7 @@ h3 {
 /* FOOTER */
 
 footer {
-  background-color: #6d8c84;
+  background-color: #1e2640;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -227,11 +228,11 @@ footer h2 {
 }
 
 footer i {
-  color: #1e2640;
+  color: #fff;
 }
 
-footer p {
-  margin: 0px 30px;
+.footertext {
+  padding: 0px 25px;
 }
 
 footer img {
@@ -247,6 +248,21 @@ p.pitch {
 .phone,
 .email {
   margin-top: 10px;
+}
+
+.contactinfo {
+  display: flex;
+  gap: 15px;
+  align-items: end;
+  margin-top: 10px;
+}
+
+.contactinfo svg {
+  display: none;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  fill: #fff;
 }
 
 /* MEDIA QUERIES */
@@ -322,23 +338,25 @@ p.pitch {
 
   /* FOOTER */
 
-  footer {
+  .footercontainer {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 50px;
+  }
+
+  .footertext {
+    padding: 0px;
   }
 
   footer h2 {
     text-align: left;
-    margin: 0px 50px;
-  }
-
-  footer p {
-    margin: 0px 50px;
   }
 
   footer .socials {
     justify-content: start;
-    margin-left: 50px;
   }
 
   .footertext {
@@ -351,6 +369,10 @@ p.pitch {
     margin: 50px;
     max-width: 40%;
     height: auto;
+  }
+
+  .contactinfo svg {
+    display: block;
   }
 }
 
@@ -429,4 +451,10 @@ p.pitch {
   }
 
   /* FOOTER */
+
+  footer img {
+    max-width: 30%;
+    height: auto;
+    margin: 50px 0px;
+  }
 }
