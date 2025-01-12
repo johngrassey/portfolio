@@ -58,7 +58,7 @@ body {
 HEADER
 */
 
-header {
+.contentwrapper {
   max-width: 1400px;
   margin: auto;
 }
@@ -267,7 +267,7 @@ p.pitch {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   /* PROJECT LIST */
 
   .projectlist {
@@ -309,7 +309,7 @@ p.pitch {
   h1 {
     top: 50px;
     right: 45px;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: right;
   }
 
@@ -325,7 +325,7 @@ p.pitch {
   }
 
   .about h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .about p {
@@ -344,11 +344,15 @@ p.pitch {
     justify-content: space-between;
     max-width: 1400px;
     margin: auto;
-    padding: 0px 50px;
+    padding: 50px 50px;
+    gap: 50px;
   }
 
   .footertext {
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0px;
   }
 
   footer h2 {
@@ -359,14 +363,8 @@ p.pitch {
     justify-content: start;
   }
 
-  .footertext {
-    display: flex;
-    flex-direction: column;
-    margin: 25px 0px;
-  }
-
   footer img {
-    margin: 50px;
+    margin: 0px;
     max-width: 40%;
     height: auto;
   }
@@ -376,14 +374,23 @@ p.pitch {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   /* HEADER */
 
+  .contentwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 80%;
+  }
+
   .image-container {
-    position: relative;
-    margin: 35px 0 0 50px;
-    width: 45%;
-    max-width: 700px;
+    min-width: 400px;
+    margin: 75px 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
   }
 
   .slope {
@@ -391,22 +398,22 @@ p.pitch {
   }
 
   header img {
+    min-width: 400px;
     max-width: 100%;
   }
 
   h1 {
     position: relative;
-    top: auto;
-    bottom: 110px;
+    right: 250px;
+    top: 100px;
   }
 
   /* ABOUT ME */
 
   .about {
+    position: relative;
     padding: 30px 25px;
-    margin: -550px auto 100px auto;
-    max-width: 1200px;
-    /* max-width: 1100px; */
+    margin: 0px;
   }
 
   .about h2 {
@@ -415,7 +422,7 @@ p.pitch {
   }
 
   .about p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 0px;
   }
 
@@ -428,12 +435,14 @@ p.pitch {
   /* PROJECT LIST */
 
   .work {
-    margin-top: 125px;
+    margin-top: 30px;
   }
+
   .work h2 {
     text-align: left;
-    margin: 100px 80px 5px;
+    margin: 0px 80px 5px;
   }
+
   .projectlist {
     margin: 0px 80px;
   }
@@ -451,6 +460,10 @@ p.pitch {
   }
 
   /* FOOTER */
+
+  .footercontainer {
+    padding: 0px 150px;
+  }
 
   footer img {
     max-width: 30%;
